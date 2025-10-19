@@ -95,13 +95,14 @@
   },
   // FILE TREE
   {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
-  },
-  {
     "command": "workbench.files.action.focusFilesExplorer",
     "key": "ctrl+e",
     "when": "editorTextFocus"
+  },
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e",
+    "when": "filesExplorerFocus && !inputFocus"
   },
   {
     "key": "n",
@@ -188,6 +189,26 @@
     "key": "k",
     "command": "list.focusUp",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && explorerViewletFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus && explorerViewletFocus"
   },
   {
     "key": "ctrl+k c",
