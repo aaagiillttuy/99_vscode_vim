@@ -100,16 +100,15 @@
     "when": "terminalFocus"
   },
   // FILE TREE
-  // {
-  //   "command": "workbench.files.action.focusFilesExplorer",
-  //   "key": "ctrl+b",
-  //   "when": "editorTextFocus"
-  // },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+b",
+    "when": "!sideBarVisible"
+  },
   {
     "command": "workbench.action.toggleSidebarVisibility",
     "key": "ctrl+b",
-    "when": ""
-    // "when": "filesExplorerFocus && !inputFocus"
+    "when": "sideBarVisible"
   },
   {
     "key": "n",
